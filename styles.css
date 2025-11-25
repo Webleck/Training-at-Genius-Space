@@ -274,6 +274,27 @@ ul{
     content: '';
 }
 
+/* carousel button */
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    fill: var(--color-primary-dark);
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary-dark);
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+}
+
+
 /* contact */
 .contact-title {
     margin-bottom: 16px;
@@ -300,6 +321,18 @@ ul{
     color: var(--color-brand-normal);
 }
 
+.address-icon {
+    fill: var(--color-primary-light);
+    width: 32px;
+    height: 32px;
+}
+
+.address-icon:hover {
+    fill: var(--color-brand-normal);
+}
+
 .address-copyright {
     font-size: 14px;
 }
+
+
