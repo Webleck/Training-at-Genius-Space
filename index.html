@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="container-header">
           <nav class="header-nav">
-            <a href="./index.html"></a>
-            <img src="./img/logo.svg" alt="Логотип сучасної пекарні" />
+            <a href="./index.html"
+              ><img src="./img/logo.svg" alt="Логотип сучасної пекарні"
+            /></a>
             <ul class="header-menu">
               <li>
                 <a class="link" href="#traditions-section">Наші традиції</a>
@@ -22,7 +23,9 @@
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -53,24 +56,26 @@
               </h2>
               <p class="traditions-text">
                 <span class="accent-light uppercase">shop bakery</span> — це
-                пекарня, яка взяла все найкраще, і зберегла смак традиційної
-                випічки та натуральність інгредієнтів.
+                пекарня, яка взяла все найкраще, і зберегла смак<br />
+                традиційної випічки та натуральність інгредієнтів.
               </p>
               <p class="traditions-text limited-width">
                 Ми працюємо як найвідоміші мережі—
-                <span class="accent-light">5 хвилин і замовлення готове.</span>
-                А ще у наших пекарень стильний дизайн та висока якість
+                <span class="accent-light"
+                  ><br />5 хвилин і замовлення готове.</span
+                >
+                <br />А ще у наших пекарень стильний дизайн та висока якість
                 обслуговування!
               </p>
             </div>
-            <img src="./img/bayker-man.jpg" alt="Пекарь" />
+            <img class="bayker-img" src="./img/bayker-man.jpg" alt="Пекарь" />
           </div>
         </div>
       </section>
       <section class="section" id="chefs-sections">
         <div class="container">
           <h2 class="chefs-title section-title centered">
-            Наші найкращі <span class="accent">шеф-кухарі</span>
+            Наші найкращі <br /><span class="accent">шеф-кухарі</span>
           </h2>
           <ul class="chefs-list">
             <li class="chefs-item">
@@ -159,7 +164,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16px" height="16px">
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
@@ -250,5 +255,12 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" type="button"></button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
