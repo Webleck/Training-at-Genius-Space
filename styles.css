@@ -26,7 +26,7 @@
     src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
 }
 
-:root{
+:root {
     --color-primary-light: #FAF4EA;
     --color-primary-dark: #31261A;
     --color-secondary-light: #A18268;
@@ -36,11 +36,11 @@
 }
 
 /* body */
-*{
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-body{
+body {
     color: var(--color-primary-dark);
     background-color: var(--color-primary-light);
     font-family: 'Poppins', sans-serif;
@@ -50,7 +50,7 @@ body{
     margin: 0;
 }
 
-.visually-hidden{
+.visually-hidden {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -59,26 +59,30 @@ body{
     overflow: hidden;
 }
 
-.section{
+.section {
     padding: 48px 0;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1288px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
-h1, h2, h3, h4, h5, h6, p{
-    margin: 0;
+a {
+    display: inline-block;
 }
 
-address{
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+address {
     font-style: normal;
 }
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -101,7 +105,7 @@ ul{
 }
 
 /* link */
-.link{
+.link {
     color: var(--color-primary-light);
     text-decoration: none;
 }
@@ -184,6 +188,12 @@ ul{
 
 .section-title .accent {
     color: var(--color-brand-normal);
+}
+
+.formats-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .format-card{
@@ -274,11 +284,35 @@ ul{
     content: '';
 }
 
+.chefs-list {
+    display: flex;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
+.chef-text p {
+    margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+    margin-bottom: 0px;
+}
+
 /* carousel button */
 .carousel-button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     padding: 0;
     width: 44px;
     height: 44px;
@@ -296,6 +330,21 @@ ul{
 
 
 /* contact */
+.contact-section {
+        padding-bottom: 96px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 32px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+}
+
 .contact-title {
     margin-bottom: 16px;
 }
@@ -303,12 +352,34 @@ ul{
 /* footer */
 
 .footer {
+    padding: 32px 0;
     background-color: var(--color-primary-dark);
     background-image: url('../img/footer-background.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
+.footer-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav, .footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-logo, .footer-menu {
+    flex-grow: 1;
+}
+
+
+.address-list, .address-text {
+    flex-grow: 1;
+}
+
 
 .address-link {
     color: var(--color-primary-light);
