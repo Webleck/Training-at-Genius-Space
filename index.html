@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -123,7 +123,7 @@
           <div class="formats-container">
             <button class="carousel-button" type="button">
               <svg width="16px" height="16px">
-                <use href="./img/icons.svg#icon-arrow"></use>
+                <use href="../img/icons.svg#icon-arrow"></use>
               </svg>
             </button>
             <ul class="format-list">
@@ -166,7 +166,7 @@
             </ul>
             <button class="carousel-button next" type="button">
               <svg width="16px" height="16px">
-                <use href="./img/icons.svg#icon-arrow"></use>
+                <use href="../img/icons.svg#icon-arrow"></use>
               </svg>
             </button>
           </div>
@@ -258,7 +258,7 @@
               <li>
                 <a class="link" href="#traditions-section">Наші традиції</a>
               </li>
-              <li><a class="link" href="#chefs-sections">шеф-кухарі</a></li>
+              <li><a class="link" href="#chefs-sections">Шеф-кухарі</a></li>
               <li><a class="link" href="#formats-section">Формати</a></li>
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
@@ -320,32 +320,35 @@
               name="name"
               id="name"
               placeholder="Ім'я"
+              required
             />
           </div>
 
           <div class="form-field">
-            <label class="form-label visually-hidden" for="phone"
-              >Телефон</label
-            >
+            <label class="form-label visually-hidden" for="phone">
+              Телефон
+            </label>
             <input
               class="form-input"
               type="tel"
               name="phone"
               id="phone"
               placeholder="Телефон"
+              required
             />
           </div>
 
           <div class="form-field">
-            <label class="form-label visually-hidden" for="email"
-              >Електронна пошта</label
-            >
+            <label class="form-label visually-hidden" for="email">
+              Електронна пошта
+            </label>
             <input
               class="form-input"
               type="email"
               name="email"
               id="email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
 

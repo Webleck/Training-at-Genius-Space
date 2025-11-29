@@ -1,0 +1,38 @@
+.tradiotions-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.bayker-img {
+    border-radius: 400px 400px 0 0;
+}
+
+.traditions-content {
+    max-width: 710px;
+}
+
+.traditions-section {
+    padding-top: 96px;
+}
+
+.traditions-title {
+    margin-bottom: 42px;
+}
+
+.traditions-text {
+    margin-bottom: 42px;
+}
+
+.traditions-text .accent-light {
+    color: var(--color-brand-normal);
+    font-weight: 600;
+}
+
+.traditions-text .uppercase {
+    text-transform: uppercase;
+}
+
+.traditions-text.limited-width {
+    max-width: 340px;
+}
